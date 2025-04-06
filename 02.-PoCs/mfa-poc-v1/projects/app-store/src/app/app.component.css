@@ -1,0 +1,10 @@
+
+
+.contenProductDetal {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 6em;
+  justify-content: space-between;
+  align-items: center;
+}

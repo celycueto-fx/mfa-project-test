@@ -1,0 +1,49 @@
+<div>
+<app-products-slider [products]="listProduct"></app-products-slider>
+  <div class="borderBottom">
+    <h2>Productos en tendencia</h2>
+  </div>
+
+  <div class="constent-product">
+    @for (product of products$ | async; track $index) {
+    <mat-card class="card-style">
+
+      <img class="imgProduct" [src]="product.image" alt="Photo of a Shiba Inu">
+     <div class="aligContent">
+      <mat-card-header>
+        <mat-card-title class="title">{{ product.title }}</mat-card-title>
+      </mat-card-header>
+
+
+      <mat-card-actions>
+        <!--   <button mat-button  [mfRouterLink]="['products/details/'+product.id]"
+          [routerLinkActive]="['active-link']"
+          [queryParams]="{title:product.title}"
+          title="Details"  class="buttom_generic_detail">Detalle</button> -->
+          <div class="alingPriceBtn">
+            <div class="d-flex">
+              @for (index of stars; track $index) {
+              <span>
+                <mat-icon class="colorIcon">{{ index < (product?.rating?.rate ?? 0) ? 'star' : 'star_border' }}</mat-icon>
+              </span>
+
+            }
+            <p class="card-text">( {{product?.rating?.rate}} )</p>
+          </div>
+            <div>
+              <span class="spanStyle">{{ product.price*0.2 | currency}}</span>
+              <del>&nbsp;{{ product.price | currency }}</del>
+            </div>
+
+            <button (click)="reservar(product)" class="buttom_generic" >Reservar</button>
+          </div>
+
+        </mat-card-actions>
+     </div>
+
+
+    </mat-card>
+  }
+
+  </div>
+</div>

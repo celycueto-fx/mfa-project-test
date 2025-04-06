@@ -1,0 +1,97 @@
+.constent-product{
+  display: grid
+  ;
+      grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+      gap: 2em;
+      border: none;
+      padding: 2em;
+
+}
+.borderBottom{
+  margin-top: 2rem;
+  border-bottom: 0.1rem solid;
+}
+h2{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.spanStyle{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff6060;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+
+.mat-mdc-card-header {
+  display: flex
+;
+  padding: 16px 0px 0;
+}
+.mat-mdc-card-actions{
+  padding: 0px !important;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.card-style{
+  display: flex;
+  flex-direction: row;
+  padding: 0em;
+  padding-bottom: 0px;
+  align-items: flex-end;
+
+}
+.aligContent{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  height: 2.5em;
+  font-weight: bold;
+}
+.alingPriceBtn{
+  display: flex;
+  flex-direction: column;
+}
+.imgProduct{
+
+  padding: 1em 1em 0em 1em;
+width: 9em;
+height: 9em;
+
+
+padding-bottom: 0em;
+}
+.buttom_generic{
+  background: black !important;
+  color: white!important;
+  font-family: 'Inter'!important;
+  padding: 0.5em!important;
+  border: none;
+  width: 100%;
+}
+.buttom_generic_detail{
+  background:  rgb(219 68 68) !important;
+  color: white!important;
+  font-family: 'Inter'!important;
+  padding: 0.5em!important;
+  border: none;
+  width: 100%;
+}
+
+.mat-icon{
+  color: #ffc107 !important;
+}
+.card-img-top{
+  width: 10em;
+  height: 10em;
+}
+
+
+img {
+  filter: brightness(1.1) !important;
+  mix-blend-mode: multiply!important;;
+}
+

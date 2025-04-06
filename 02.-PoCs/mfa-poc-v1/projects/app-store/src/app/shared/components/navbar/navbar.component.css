@@ -1,0 +1,35 @@
+
+.title{
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-link{
+  cursor: pointer;
+}
+.nav-link:hover{
+  cursor: pointer;
+  border-bottom: 0.1em solid grey
+}
+.menu-text{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+.content-toolbar{
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+.mat-toolbar-single-row {
+  display: flex
+;
+border-bottom: 0.1em solid grey;
+  box-sizing: border-box;
+  padding: 0 16px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  height: var(--mat-toolbar-standard-height, 64px);
+  justify-content: space-between;
+}

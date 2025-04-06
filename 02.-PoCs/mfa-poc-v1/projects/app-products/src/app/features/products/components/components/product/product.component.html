@@ -1,0 +1,30 @@
+
+<!-- <br>
+<span>
+Data x : {{data()}}
+
+Product x : {{product() | json}}
+</span> -->
+@let item=product();
+@if(item){
+  <div class="card">
+    <img src="{{item?.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <div class="d-flex">
+        @for (index of stars; track $index) {
+        <span>
+          <mat-icon class="colorIcon">{{ index < (item?.rating?.rate ?? 0) ? 'star' : 'star_border' }}</mat-icon>
+        </span>
+
+      }
+      <p class="card-text">( {{item?.rating?.rate}} )</p>
+    </div>
+      <h5 class="card-title">{{ item?.title}}</h5>
+      <p class="spanStyle mt-1">{{item?.price | currency}}</p>
+
+
+      <a href="#" class="btn btn-secondary">Add card</a>
+    </div>
+  </div>
+}
+

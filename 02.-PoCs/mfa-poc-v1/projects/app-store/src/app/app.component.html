@@ -1,0 +1,24 @@
+
+
+<app-navbar></app-navbar>
+
+
+  <!-- <a routerLink ="appUsers"> App Users </a> -->
+
+  <!-- <mfe-app-products></mfe-app-products> -->
+  <div>
+    <div class="contenProductDetal">
+      <div>
+          <router-outlet />
+      </div>
+      <div>
+<!--         xxx
+        @if(product){
+          {{product | json}}
+        } -->
+        @if(product){
+          <app-product-component [product]="product" />
+        }
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,18 @@
+
+ng new mfa-demo-v1 --create-application=false
+
+ng g application host
+
+ng g application remote
+
+npm i @angular-architects/native-federation
+
+ng g @angular-architects/native-federation:init --project=host --port 4200 --type dynamic-host
+ng g @angular-architects/native-federation:init --project remote --port=4201 --type=remote
+
+#ng g @angular-architects/native-federation:init --project users --port=4202  --type=remote
+
+npm i @angular/elements
+
+ng serve remote
+ng serve host

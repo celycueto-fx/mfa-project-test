@@ -1,0 +1,249 @@
+/* Carousel container */
+#header-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Carousel indicators */
+.carousel-indicators {
+  bottom: 30px;
+}
+
+.carousel-indicators li {
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+/* Slide content */
+.single-slide-item {
+  padding: 80px 0;
+  color: #333;
+
+}
+
+.slide1 {
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* Texto */
+.welcome-hero-txt h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.welcome-hero-txt h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.welcome-hero-txt p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+/* Precios */
+.packages-price p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.packages-price del {
+  font-size: 16px;
+  color: #bbb;
+  margin-left: 10px;
+}
+
+/* Botones */
+.btn-cart {
+  background: #ff6060;
+  color: #fff;
+  padding: 12px 25px;
+  margin-right: 10px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.3s ease;
+  border-radius: 4px;
+}
+
+.btn-cart:hover {
+  background: #e14b0f;
+}
+
+/* Imagen del producto */
+.welcome-hero-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .welcome-hero-txt h2 {
+    font-size: 30px;
+  }
+
+  .welcome-hero-txt p {
+    font-size: 14px;
+  }
+
+  .single-slide-item {
+    padding: 50px 0;
+  }
+
+  .btn-cart {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+/* Estilos generales del carrusel */
+#header-carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  background-color: transparent;
+  border: 2px solid #fff;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+/* Fondo del slide */
+.single-slide-item {
+  padding: 0;
+  color:#222;
+  position: relative;
+}
+
+/* Fondo personalizado si usas slide1, slide2, etc. */
+.slide1 {
+
+}
+
+/* Contenedor del contenido del héroe */
+.welcome-hero-content {
+  padding: 30px 0;
+}
+
+/* Texto del héroe */
+.welcome-hero-txt h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #ff6060;
+}
+
+.welcome-hero-txt h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.welcome-hero-txt p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 25px;
+  color: #777777;
+}
+
+/* Precio */
+.packages-price p {
+  font-size: 24px;
+  font-weight: bold;
+  color:#777777;
+}
+
+.packages-price del {
+  color: #aaa;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+/* Botones */
+.btn-cart {
+  display: inline-block;
+  background-color: #ff6060;
+  color: #fff;
+  padding: 12px 25px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-cart:hover {
+  background-color: #e24c0c;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Imagen del producto */
+.welcome-hero-img img {
+  width: 50%;
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .welcome-hero-txt h2 {
+    font-size: 32px;
+  }
+
+  .welcome-hero-txt p {
+    font-size: 14px;
+  }
+
+  .btn-cart {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .single-slide-item {
+    padding: 60px 0;
+  }
+
+  .carousel-indicators {
+    bottom: 20px;
+  }
+}

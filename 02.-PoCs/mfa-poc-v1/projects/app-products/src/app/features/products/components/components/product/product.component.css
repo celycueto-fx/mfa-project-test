@@ -1,0 +1,24 @@
+.card{
+  padding: 2em;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 25rem;
+  border: 0.15rem solid;
+  margin-top: 21em;
+}
+.spanStyle{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff6060;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+
+.mat-icon{
+  color: #ffc107 !important;
+}
+.card-img-top{
+  width: 10em;
+  height: 10em;
+}
